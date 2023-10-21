@@ -44,7 +44,6 @@ export const TodoWrapper = () => {
     <div className="TodoWrapper">
       <h1>Давай составим лист задач!</h1>
       <TodoForm addTodo={addTodo} />
-      {/* display todos */}
       {todos.map((todo) =>
         todo.isEditing ? (
           <EditTodoForm editTodo={editTask} task={todo} />
